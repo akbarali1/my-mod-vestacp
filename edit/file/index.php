@@ -69,9 +69,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Edit file <?= htmlspecialchars($_REQUEST['path']) ?></title><script src="/js/cheef-editor/jquery/jquery-1.8.3.min.js"></script> <!-- load emmet code and snippets compiled for browser -->
+    <title>Edit file <?= htmlspecialchars($_REQUEST['path']) ?></title>
+    <script src="/js/cheef-editor/jquery/jquery-1.8.3.min.js"></script> <!-- load emmet code and snippets compiled for browser -->
     <script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
     <script src="/js/kitchen-sink/require.js"></script>
+    <script type="text/javascript" src="/js/hotkeys.js"></script>
     <style type="text/css" media="screen">
       body {
       overflow: hidden;
@@ -87,7 +89,8 @@
     </style>
   </head>
   <body>
-    <input type="submit" onClick="save_file();" value="Saqlash" style="display:block;position: relative;background-color: #00FF3A;color: black;padding: 10px;z-index: 999999999999999999999;float: right;margin-top: 53px;margin-right: 15px;" />
+    <input type="submit" onclick="makeBackup();" value="Backup" style="display:block;position: relative;background-color: #2049C6;color: white;padding: 10px;z-index: 999999999999999999999;float: right;margin-top: 80px;margin-right: 15px;">
+    <input type="submit" onClick="save_file();" value="Saqlash" style="display:block;position: relative;background-color: #00FF3A;color: black;padding: 10px;z-index: 999999999999999999999;float: right;margin-top: 133px;margin-right: -69px;" />
     <div id="message" style="display:none;position: relative;background-color: green;color: white;padding: 10px;z-index: 999999999999999999999;float: right;"></div>
     <div id="bajarilmoqda" style="display:none;position: relative;background-color: yellow;color: black;padding: 10px;z-index: 999999999999999999999;float: right;">Berilgan vazifa qayta ishlanmoqda</div>
     <div id="error-message" style="display:none; position: relative;background-color: red; color: white; padding: 10px;z-index: 999999999999999999999;float: right;"></div>
@@ -99,6 +102,10 @@
       // load ace and extensions
       require(["ace/ace", "ace/ext/emmet", "ace/ext/settings_menu"], function(ace) {
           var editor = ace.edit("editor");
+             editor.setOptions({
+              copyWithEmptySelection: true,
+            //  enableMultiselect: true,
+            });
           editor.setTheme("ace/theme/tomorrow_night_eighties");
           var textarea = $('textarea[name="editor"]').hide();
            ace.require('ace/ext/settings_menu').init(editor);
@@ -109,7 +116,20 @@
       editor.getSession().on('change', function(){
       textarea.val(editor.getSession().getValue());
       });
-       editor.setOption("wrap", true);
+      
+      editor.commands.addCommand({
+        name: "showKeyboardShortcuts",
+        bindKey: {win: "Ctrl-Alt-h", mac: "Command-Alt-h"},
+        exec: function(editor) {
+            ace.config.loadModule("ace/ext/keybinding_menu", function(module) {
+                module.init(editor);
+                editor.showKeyboardShortcuts()
+            })
+        }
+      })
+   //   editor.execCommand("showKeyboardShortcuts");
+       
+       /*editor.setOption("wrap", true);
       	editor.commands.addCommands([{
       		name: "showSettingsMenu",
       		bindKey: {win: "Ctrl-q", mac: "Ctrl-q"},
@@ -117,13 +137,11 @@
       			editor.showSettingsMenu();
       		},
       		readOnly: true
-      	}]);
-      });
-    </script>
-    <script type="text/javascript" src="/js/hotkeys.js"></script>
-    <script type="text/javascript">
+      	}]); 
+      	*/
+     });
       var makeBackup = function() {
-          var params = {
+         var params = {
               action: 'backup',
               path:   '<?= $path ?>'
           };
@@ -209,7 +227,6 @@
           'disable_in_input': false,
           'target':           document
       });
-      
     </script>
   </body>
 </html>
