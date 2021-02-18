@@ -17,9 +17,9 @@ Undan tashqati eski ace editorning o'rniga zamonaviy Ace Editor qo'yildi.
 
 # Eng tezkor klavishlar
 
-Ctrl+S va SHift+F12 falni saqlash
+Ctrl+S va SHift+F12 faylni saqlash
 
-Ctrl+b faylning joriy vaqtidan nusha olib qo`yish (bunda faylo`sha holatidan yangi nom bilan o`sha papkaga yangi fayl sifatida saqlanadi)
+Ctrl+b faylning joriy vaqtidan nusxa olib qo`yish (bunda fayl o`sha holatidan yangi nom bilan o`sha papkaga yangi fayl sifatida saqlanadi)
 
 # Tezkor klavishlar
 
