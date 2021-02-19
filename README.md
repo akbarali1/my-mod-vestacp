@@ -19,7 +19,7 @@ Undan tashqati eski ace editorning o'rniga zamonaviy Ace Editor qo'yildi.
 
 Ctrl+S va SHift+F12 faylni saqlash
 
-Ctrl+b faylning joriy vaqtidan nusxa olib qo'yish (bunda fayl o`sha holatidan yangi nom bilan o`sha papkaga yangi fayl sifatida saqlanadi)
+Ctrl+b faylning joriy vaqtidan nusxa olib qo'yish (bunda fayl o'sha holatidan yangi nom bilan o`sha papkaga yangi fayl sifatida saqlanadi)
 
 # Tezkor klavishlar
 # Кодларни яшириш
