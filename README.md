@@ -22,24 +22,13 @@ Ctrl+S va SHift+F12 faylni saqlash
 Ctrl+b faylning joriy vaqtidan nusxa olib qo`yish (bunda fayl o`sha holatidan yangi nom bilan o`sha papkaga yangi fayl sifatida saqlanadi)
 
 # Tezkor klavishlar
+# Кодларни яшириш
 
-ctrl+shift+d 			o'sha qatordagi kodni pastgi qatorga kopy nusxasini tashlaydi
+alt+l				kodni belgilab bosilsa o`sha kodni yashiradi
 
-ctrl+d				O'sha qatorni butunlar o'chiradi
+alt+shift+l			tepadagini teskarisi yashirilgan kodni ko`rsatadi
 
-ctrl+,				sozlash menyusini ochadi
-
-ctrl+alt+h			shortkodelarni hammsini ko'rsatadi
-
-alt+e || alt+shift+e		kodladi hatolarni ko'rsatadi
-
-ctrl+l				menyu ochiladi va qatorni raqamini yozsa o'sha qatorga kursor o'tadi
-
-alt+l				kodni belgilab bosilsa o'sha kodni yashiradi
-
-alt+shift+l			tepadagini teskarisi yashirilgan kodni ko'rsatadi
-
-F2				divni ichida turgan bo'lsa o'sha divni o'zini belgilamay yashirib qo'yadi
+F2				divni ichida turgan bo`lsa o`sha divni o`zini belgilamay yashirib qo`yadi
 
 Alt+F2				Tepadagini teskarisi yashirilganni ochadi
 
@@ -47,102 +36,137 @@ alt+0				hamma kodlarni yashiradi
 
 alt+shift+0			tepadagini teskarisi yashirilganni ochadi
 
-ctrl+k				matnni belgilab bosilganda o'sha matnning boshqasini topib o'shanga o'tadi tepadan pastga
 
-ctrl+shift+k			tepadagini o'zi faqat pastdan tepaga
 
-ctrl+f 				so'zni qidirish
+# Сўзларни белгилаш
 
-insert				so'z yosildi va eski so'zlarni o'chiriib ketadi (oldindagi sozlar ochiriladi)
+ctrl+shift+home			belgilangan qatordan tepasidagi hamma so`zni belgilaydi
 
-ctrl+shift+home			belgilangan qatordan tepasidagi hamma so'zni belgilaydi
-
-ctrl+home			kursorni eng tepaga o'tkazadi
-
-ctrl+shift+end			kursorning pastini hamma so'zni belgilaydi
-
-ctrl+end			kursorni eng pastga o'tkazadi
+ctrl+shift+end			kursorning pastini hamma so`zni belgilaydi
 
 shift+down			kursordan pastni belgilaydi
 
-down || PgDn			kursorni
+shift+end			kursor kodni chap tarafida bo`sa o`sha kodni hammasini belgilaydi
 
-clt+left 			so'zlardan keyngisiga o'tkazadi
-	
-alt+left			nimaligini to'liq tushunib yetmadim
+shift+home			kursot kodni o`ng ratafida bo`sa o`sha kodni hmmasini belgilaydi
 
-shift+end			kursor kodni chap tarafida bo'sa o'sha kodni hammasini belgilaydi
+ctrl+shift+p || ctrl+shift+\	tepadaginga o`xshaydi div ichiadi barcha so`zni belgilaydi (o`chirishingiz mumkun)
 
-shift+home			kursot kodni o'ng ratafida bo'sa o'sha kodni hmmasini belgilaydi
-		
-ctrl+\ || cltr+p		kursorni o'sha divni ichidagi birinchi va oxirgi so'zga o'tkazadi
+ctrl+shift+m			div ning eng tugashiga kursorni olib boradi yana bosilsa o`sha div ichiadi hamma so`zni belgilaydi (like)
 
-ctrl+shift+p || ctrl+shift+\	tepadaginga o'xshaydi div ichiadi barcha so'zni belgilaydi (o'chirishingiz mumkun)
+shift+end || shift+home		Kursor dan oldin va keyngi o`sha qatordagi hamma matinni o`sha belgilaydi
 
-ctrl+shift+m			div ning eng tugashiga kursorni olib boradi yana bosilsa o'sha div ichiadi hamma so'zni belgilaydi (like)
+ctrl+alt+k			belgilandan so`zni koddagi hammasini belgilaydi
 
-ctrl+d				o'sha qarotni butunlar o'chiradi
+ctrl+shift+l			kursor turgan qarotni hammasini belgilaydi agarda yana bosilsa o`sha qatordan pastiga yana belgilab tushib ketadi
 
-ctrl+shift+d			o'sha qatorni pastga nusxasini tashlaydi (divni umumiy hammasini belgilab boshilsa o'sha hammasi pastga 
-				nusxasini tashlaydi)
 
-ctrl+alt+s			belgilangan kodni teadagini pastga pasdagini tepaga almashtiradi
 
-shift+end || shift+home		Kursor dan olin va keyngi o'sha qatordagi hamma matinni o'sha belgilaydi
+# Коментарияга олиш
 
-ctrl+h				matinni almashtirish menyusini ochadi so'zni belgilasa o'sha so'z searchga avto yoziladi
+ctrl+shift+/			belgilangan kodni komentariyaga oladi
 
-dellete 			kursordan keyngi bitta harfni o'chiradi
 
-shift+dellete			kursordan oldingi bitta harfni o'chiradi
 
-alt+Backspace			kursordan oldingi o'sha qarotdagi hamma so'zni o'chiradi
+# Кодларни ўчрииш
 
-alt+dellete			kursordan keyngi o'sha qarotdagi hamma so'zni o'chiradi
+ctrl+d				O`sha qatorni butunlar o`chiradi
 
-ctrl+shift+backspace		kursordan oldingi kodni hammasini o'chiradi o'chiradi o'sha qatorni
+insert				so`z yozildi va eski so`zlarni o`chiriib ketadi (oldindagi sozlar ochiriladi)
 
-ctrl+shift+dellete		kursordan keyngi hammasini o'chiradi o'sha qatorni
+dellete 			kursordan keyngi bitta harfni o`chiradi
 
-shift+tab			o'sha qator kodni bitta tab oldinga siljitadi
+shift+dellete			kursordan oldingi bitta harfni o`chiradi
 
-ctrl+[ 				o'sha qator kodini oldiga bitta tabni o'chiradi
+alt+Backspace			kursordan oldingi o`sha qarotdagi hamma so`zni o`chiradi
 
-ctrl+]				o'sha qator kodini oldiga bitta tabni qo'shadi
+alt+dellete			kursordan keyngi o`sha qarotdagi hamma so`zni o`chiradi
 
-alt+shift+x			kursor turgan koddan bitta harfni tashlab oldingi harfni kursor oldiga olib o'tadi
+ctrl+shift+backspace		kursordan oldingi kodni hammasini o`chiradi o`chiradi o`sha qatorni
+
+ctrl+shift+dellete		kursordan keyngi hammasini o`chiradi o`sha qatorni
+
+ctrl+shift+`			qandaydur nimadurni o`chiradi
+
+ctrl+shift+;			divning otasini o`chiradi
+
+
+
+# Курсор бўйича амаллар
 
 ctrl+u				kursorda turgan harni hammasini katta qiladi
 
 ctrl+shift+u			kursorda turgan harni hammasini kichik qiladi
 
-ctrl+shift+l			kursor turgan qarotni hammasini belgilaydi agarda yana bosilsa o'sha qatordan pastiga yana belgilab tushib 				ketadi
+ctrl+home			kursorni eng tepaga o`tkazadi
 
-F1				qandaydur menyu ochiladi menimcha ko'p funksiyalarni qilsa bo'ladigan menyu
+ctrl+end			kursorni eng pastga o`tkazadi
 
+down || PgDn			kursorni eng pastga olib tushadi
 
-ctrl+alt+k			belgilandan so'zni koddagi hammasini belgilaydi
+ctrl+l				menyu ochiladi va qatorni raqamini yozsa o`sha qatorga kursor o`tadi
 
-ctrl+alt+a			kodni hammasini tekish qiladi (hali to'liq tushunmadim)
+ctrl+\ || cltr+p		kursorni o`sha divni ichidagi birinchi va oxirgi so`zga o`tkazadi
 
-alt+e				koddagi hatolarni ko'rsatadi
+ctrl+shift+.			kengi div ichiga o`tadi classlar va idlar bilan (unchalik tushunmadim) tepadan pastga
+
+ctrl+shift,			tepadagini teskarisi pasdan tepaga
 
 alt+j				divni boshida va oxiriga chiqadsi va tushadi
 
-ctrl+shift+'			qandaydur nimadurni o'chiradi
+alt+left			nimaligini to`liq tushunib yetmadim
 
-ctrl+shift+;			divning otasini o'chiradi
-
-ctrl+shift+.			kengi div ichiga o'tadi classlar va idlar bilan (unchalik tushunmadim)
-
-ctrl+shift,			tepadagini teskarisi
-
-alt+k				so'zlarni qidiradi va keyngisiga o'tkazadi
-
-ctrl+shift+a			Popup ochiladi va popupga so'zni yozsa o'sha belgilandan kodni o'sha popupga yozilgan divni 					ichiga kirgazadi
+clt+left 			so`zlardan keyngisiga o`tkazadi
 
 
 
+# Нусха олиш ва ташлаш
+
+ctrl+shift+d 			o`sha qatordagi kodni pastgi qatorga kopy nusxasini tashlaydi
+
+
+
+# Сўзларни кидириш топиш ва алмаштириш
+
+alt+k				so`zlarni qidiradi va keyngisiga o`tkazadi
+
+ctrl+f 				so`zni qidirish
+
+ctrl+h				matinni almashtirish menyusini ochadi so`zni belgilasa o`sha so`z searchga avto yoziladi
+
+ctrl+k				matnni belgilab bosilganda o`sha matnning boshqasini topib o`shanga o`tadi tepadan pastga
+
+ctrl+shift+k			tepadagini o`zi faqat pastdan tepaga
+
+
+
+# Таблар бўйича ишлар таб олинга силжитиш кодни олдинга силжитиш
+
+shift+tab			o`sha qator kodni bitta tab oldinga siljitadi
+
+ctrl+[ 				o`sha qator kodini oldiga bitta tabni o`chiradi
+
+ctrl+]				o`sha qator kodini oldiga bitta tabni qo`shadi
+
+ctrl+alt+s			belgilangan kodni teadagini pastga pasdagini tepaga almashtiradi
+
+alt+shift+x			kursor turgan koddan bitta harfni tashlab oldingi harfni kursor oldiga olib o`tadi
+
+ctrl+shift+a			Popup ochiladi va popupga so`zni yozsa o`sha belgilandan kodni o`sha popupga yozilgan divni ichiga kirgazadi
+
+
+
+# Тепадагиларнинг бирортасига кирмайдиган бошка турдагилар
+
+ctrl+,				sozlash menyusini ochadi
+
+ctrl+alt+h			shortkodelarni hammsini ko`rsatadi
+
+alt+e || alt+shift+e		kodladi xatolarni ko`rsatadi
+
+F1				qandaydur menyu ochiladi menimcha ko`p funksiyalarni qilsa bo`ladigan menyu
+
+ctrl+alt+a			kodni hammasini tekish qiladi (hali to`liq tushunmadim)
 
 
 # kodni faqat o'zim uchun yozgan edim
@@ -151,5 +175,4 @@ Boshida kodni faqat o'zim ishlatishim uchun yozgan edim. Keyn githubga ochiq hol
 
 
 
-
-#Yoqqan bo'lsa yulduzcha bosish esdan chiqamasin
+# Yoqqan bo'lsa yulduzcha bosish esdan chiqamasin
