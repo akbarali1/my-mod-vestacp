@@ -73,9 +73,8 @@
     <script src="/js/cheef-editor/jquery/jquery-1.8.3.min.js"></script> <!-- load emmet code and snippets compiled for browser -->
     <script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
     <script src="https://ace.c9.io/build/src-noconflict/ace.js"></script>
-    <script src="/js/kitchen-sink/require.js"></script>
-    <script src="https://ace.c9.io/build/src-noconflict/ext-language_tools.js"></script>
     <script type="text/javascript" src="/js/hotkeys.js"></script>
+    <script src="https://ace.c9.io/build/src-noconflict/ext-language_tools.js"></script>
     <style type="text/css" media="screen">
       body {
       overflow: hidden;
@@ -99,32 +98,30 @@
     <textarea  name="editor" style="display:none;width: 100%; height: 100%;"><?=htmlentities($content)?></textarea>
     <div id="editor"></div>
     <script>
-      // setup paths
-      require.config({paths: { "ace" : "../../js/lib/ace"}});
-      // load ace and extensions
-      require(["ace/ace", "ace/ext/emmet", "ace/ext/settings_menu", "ace/ext/language_tools"], function(ace) {
-          var editor = ace.edit("editor");
-            editor.setOptions({
-             copyWithEmptySelection: true,
-             enableSnippets: true,
-             enableBasicAutocompletion: true,
-             enableLiveAutocompletion: true,
-             fontSize: "14px",
-            });
-          editor.setTheme("ace/theme/tomorrow_night_eighties");
-          var textarea = $('textarea[name="editor"]').hide();
-           ace.require('ace/ext/settings_menu').init(editor);
-          editor.session.setMode("ace/mode/php");
-          // enable emmet on the current editor
-          editor.setOption("enableEmmet", true);
+    ace.require("ace/ext/language_tools");
+    ace.require("ace/ext/emmet");
+    var editor = ace.edit("editor");
+    
+    editor.session.setMode("ace/mode/php");
+    editor.setTheme("ace/theme/tomorrow_night_eighties");
+    var textarea = $('textarea[name="editor"]').hide();
+    editor.setOption("enableEmmet", true);
     editor.setOption("wrap", true);
-      editor.getSession().setValue(textarea.val());
-      editor.getSession().on('change', function(){
+    editor.getSession().setValue(textarea.val());
+    editor.getSession().on('change', function(){
       textarea.val(editor.getSession().getValue());
       });
-      
-      
-      editor.commands.addCommand({
+    
+    // enable autocompletion and snippets
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true,
+        copyWithEmptySelection: true,
+        fontSize: "14px",
+    });
+    
+     editor.commands.addCommand({
         name: "showKeyboardShortcuts",
         bindKey: {win: "Ctrl-Alt-h", mac: "Command-Alt-h"},
         exec: function(editor) {
@@ -133,20 +130,7 @@
                 editor.showKeyboardShortcuts()
             })
         }
-      })
-   //   editor.execCommand("showKeyboardShortcuts");
-       
-       /*editor.setOption("wrap", true);
-      	editor.commands.addCommands([{
-      		name: "showSettingsMenu",
-      		bindKey: {win: "Ctrl-q", mac: "Ctrl-q"},
-      		exec: function(editor) {
-      			editor.showSettingsMenu();
-      		},
-      		readOnly: true
-      	}]); 
-      	*/
-     });
+      });
       var makeBackup = function() {
          var params = {
               action: 'backup',
