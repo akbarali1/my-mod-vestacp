@@ -1,7 +1,11 @@
 # my-mod-vestacp
 Men Takomillashtirgan VestaCP	Men Takomillashtirgan VestaCP
-Qisqa video qo'llanma nimalar qila olishi haqida mover.uzda vidyo shaklida joylangan 
-[![IMAGE ALT TEXT HERE](https://i.mover.uz/i2aSzmXm_h2.jpg)](https://mover.uz/video/embed/i2aSzmXm/)
+Qisqa video qo'llanma nimalar qila olishi haqida mover.uzda vidyo shaklida joylangan (ramlar ustiga bosing)
+[![IMAGE ALT TEXT HERE](https://i.mover.uz/i2aSzmXm_h2.jpg)](https://mover.uz/watch/i2aSzmXm/)
+
+
+Kodlarni avtoto'lduruvchi va emmet qo'shilganidan so'ng olingan video qo'llanma
+[![IMAGE ALT TEXT HERE](https://i.mover.uz/tuB15JXm_h2.jpg)](https://mover.uz/watch/tuB15JXm/)
 
 # O'rnatish
 Kodni ZIP qilib yuklab oling va `../usr/local/vesta/web` papkasiga tashlang
